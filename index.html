@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="slippry/slippry.min.js"></script>
+    <link rel="stylesheet" href="slippry/slippry.css" />
+
+    <title>Cheesracing</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      jQuery(document).ready(function () {
+        jQuery("#pictures-slide").slippry({
+          // options
+          adaptiveHeight: false, // height of the sliders adapts to current slide
+          captions: false, // Position: overlay, below, custom, false
+
+          // pager
+          pager: false,
+
+          // controls
+          controls: false,
+          autoHover: false,
+
+          // transitions
+          transition: "horizontal", // fade, horizontal, kenburns, false
+          speed: 2500, // time the transition takes (ms)
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <span id="tagline"> Wasting perfectly good cheese* since 1997... </span>
+      <nav aria-label="Primary">About Rules Gallery Shop</nav>
+    </header>
+    <main>
+      <section class="front-page">
+        <div class="flex-container">
+          <div class="title-box">
+            <h1>
+              Welcome to the exciting world of
+              <div id="cheeseracing">CHEESE RACING!</div>
+            </h1>
+          </div>
+          <div class="slider-container">
+            <ul id="pictures-slide">
+              <li>
+                <img src="assets/durdle2000-1.jpg" alt="Durdle Door 00-1" />
+              </li>
+              <li>
+                <img src="assets/durdle99-2.jpg" alt="Durdle Door 99-2" />
+              </li>
+              <li>
+                <img src="assets/durdle2000-2.jpg" alt="Durdle Door 00-2" />
+              </li>
+              <li>
+                <img src="assets/florida2.jpg" alt="Florida2" />
+              </li>
+              <li>
+                <img src="assets/mario_in_oz2.jpg" alt="Mario in Oz2" />
+              </li>
+                <li>
+                <img src="assets/relaxed.jpg" alt="relaxed" />
+              </li>
+                <li>
+                <img src="assets/maz_in_oz.jpg" alt="maz in oz" />
+              </li>
+            <li>
+                <img src="assets/washingtonhockey2.jpg" alt="washington hockey" />
+              </li>
+              <li>
+                <img src="assets/wolla01-5.jpg" alt="wollacombe" />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="anno">
+          *Opinions vary as to whether this is really a waste. Opinions also
+          vary as to whether any actual 'cheese' is involved.
+        </div>
+      </section>
+      <section class="about-1">
+          <div class="grid-container">
+              <div class="img-container">
+                  <img src="assets/cheese_slice_transparent.png" alt="cheese slices" />
+              </div>
+              <div class="text-box">
+                  <h2>What is it?</h2>
+                  <p>What do you think happens when you throw a slice of processed cheese (without removing the plastic wrapping) onto a lit barbeque?</p>
+                  <p>The plastic melts giving off highly toxic fumes and you are left with a pretty grim cheese/plastic mess welded on to your BBQ, right?</p>
+                  <h2>Wrong!</h2>
+              </div>
+              <div class="text-box">
+                  <p>Unbelievably what actually happens, as discovered by the pioneers and inventors of the sport way back in 1997, is that the plastic pouch does not melt - even when the cheese inside eventually boils!</p>
+                  <p>Even more incredibly, as the cheese melts and the strange chemicals found in processed cheese turn to gas - the plastic pouch inflates until eventually all four corners lift off the BBQ and the pouch is fully inflated!</p>
+                  <p>Now under this pressure you might think that the pouch would eventually burst - but no - most of the time the seal remains intact!</p>
+              </div>
+              <div class="img-container-2">
+                    <img src="assets/cali_4th_july_cheese.jpg" alt="inflated cheese slices" />
+              </div>
+          </div>
+      </section>
+    </main>
+  </body>
+</html>
