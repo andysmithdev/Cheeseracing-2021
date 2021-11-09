@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6STK0ETLMP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6STK0ETLMP');
+</script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
@@ -38,16 +48,29 @@
   </head>
   <body>
     <header>
-      <span id="tagline"> Wasting perfectly good cheese* since 1997... </span>
-      <nav aria-label="Primary">About Rules Gallery Shop</nav>
+      <div id="header-flex">
+          <div id="logo"><a href="index.html">Cheeseracing</a></div> <div id="tagline"> wasting perfectly good cheese* since 1997... </div>
+      </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="material-icons">menu</span></label>
+        <ul class="menu">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="#forget">Shop</a></li>
+        </ul>   
     </header>
     <main>
       <section class="front-page">
+         
         <div class="flex-container">
           <div class="title-box">
             <h1>
-              Welcome to the exciting world of
-              <div id="cheeseracing">CHEESE RACING!</div>
+              Welcome to the world of
+              <div class="shadow">
+                <img src="assets/cheeseracinglogo.jpg" alt="Cheeseracing"/>
+              </div>
             </h1>
           </div>
           <div class="slider-container">
@@ -82,33 +105,73 @@
             </ul>
           </div>
         </div>
-
-        <div class="anno">
-          *Opinions vary as to whether this is really a waste. Opinions also
-          vary as to whether any actual 'cheese' is involved.
-        </div>
+              <a name="about">
       </section>
-      <section class="about-1">
-          <div class="grid-container">
-              <div class="img-container">
-                  <img src="assets/cheese_slice_transparent.png" alt="cheese slices" />
-              </div>
-              <div class="text-box">
-                  <h2>What is it?</h2>
-                  <p>What do you think happens when you throw a slice of processed cheese (without removing the plastic wrapping) onto a lit barbeque?</p>
-                  <p>The plastic melts giving off highly toxic fumes and you are left with a pretty grim cheese/plastic mess welded on to your BBQ, right?</p>
-                  <h2>Wrong!</h2>
-              </div>
-              <div class="text-box">
-                  <p>Unbelievably what actually happens, as discovered by the pioneers and inventors of the sport way back in 1997, is that the plastic pouch does not melt - even when the cheese inside eventually boils!</p>
-                  <p>Even more incredibly, as the cheese melts and the strange chemicals found in processed cheese turn to gas - the plastic pouch inflates until eventually all four corners lift off the BBQ and the pouch is fully inflated!</p>
-                  <p>Now under this pressure you might think that the pouch would eventually burst - but no - most of the time the seal remains intact!</p>
-              </div>
-              <div class="img-container-2">
-                    <img src="assets/cali_4th_july_cheese.jpg" alt="inflated cheese slices" />
-              </div>
+     
+      <section class="about about-1">
+          <div class="to-centre">
+            <div class="grid-container">
+                <figure class="img-container img-container-1">
+                    <img src="assets/cheese_slice_transparent_cropped.png" alt="cheese slices" />
+                </figure>
+                <div class="text-box text-box-1">
+                    <h2>What is it?</h2>
+                    <p>What do you think happens when you throw a slice of processed cheese (without removing the plastic wrapping) onto a lit barbeque?</p>
+                    <p>The plastic melts giving off highly toxic fumes and you are left with a pretty grim cheese/plastic mess welded on to your BBQ, right?</p>
+                    <h2>Wrong!</h2>
+                </div>
+                <div class="text-box text-box-2">
+                    <p>Unbelievably what actually happens, as discovered by the pioneers and inventors of the sport way back in 1997, is that the plastic pouch does not melt - even when the cheese inside eventually boils!</p>
+                    <p>Even more incredibly, as the cheese melts and the strange chemicals found in processed cheese turn to gas - the plastic pouch inflates until eventually all four corners lift off the BBQ and the pouch is fully inflated!</p>
+                    <p>Now under this pressure you might think that the pouch would eventually burst - but no - most of the time the seal remains intact!</p>
+                </div>
+                <figure class="img-container shadow img-container-2">
+                        <img src="assets/cali_4th_july_cheese.jpg" alt="inflated cheese slices" />
+                </figure>
+            </div>
           </div>
       </section>
+
+      <section class="about about-2">
+         <div class="to-centre">
+             <div class="grid-container">
+                <figure class="img-container shadow img-container-1">
+                    <img src="assets/space shuttle.jpg" alt="space shuttle" />
+                </figure>
+                <div class="text-box text-box-1">
+                    <p>Quite why processed cheese manufacturers choose to use such industrial strength, heat proof plastic to encase their products is something of a mystery - as is why NASA don't use this material instead of those expensive heat proof tiles on the space shuttle?</p>
+                    <p>Such important questions no doubt occurred to the first observers of this phenomenon on that night in <a href="history.html">Osmington</a>, but that didn't stop them from coming up with a brilliantly simple sport based on it.</p>
+                </div>
+                <div class="text-box text-box-2">
+                   <h2>The game</h2>
+                   <ul class="cheese-slice">
+                      <li>Each player throws a slice of cheese onto the BBQ.</li>
+                      <li>The player whose cheese fully inflates first wins!</li>
+                   </ul>
+                    <p>Read the full <a href="rules.html">CRASS rules</a>.</p>
+                </div>
+                <figure class="img-container shadow img-container-2">
+                        <img src="assets/durdle2000-1.jpg" alt="exciting cheeserace" />
+                </figure>
+            </div>
+          </div>   
+      </section>
+
+      <footer>
+      <p>WARNING!! Cheese racing can be dangerous - the makers of this website can not be held responsible for any accidents or injuries that may occur. Practice safe cheese racing by following these simple guide lines.</p>
+
+<ul>
+    <li>Do NOT attempt 'indoor cheese racing'. This is strictly an outdoor sport. (This includes tents!)</li>
+
+    <li>Be sure to ingest large quantities of alcohol and/or other chemical relaxant before (and during) play. This will relax the body and nervous system, thus minimising the pain of any injury and enabling you to play on.</li>
+</ul>
+    <p>Having said that, the sport does have an impressive safety record with zero fatalities, so far...</p>
+
+    <p class="anno">
+          * Opinions vary as to whether this is really a waste. Opinions also
+          vary as to whether any actual cheese is involved.
+    </p>
+      </footer>
     </main>
   </body>
 </html>
