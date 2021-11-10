@@ -654,7 +654,6 @@ header {
     box-shadow: 1px 1px 0 var(--offwhite);
  }
 
-
  @media only screen and (max-width: 800px) {
      .grid-container {
          grid-template-areas: "tb1" 
