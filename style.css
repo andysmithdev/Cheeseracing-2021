@@ -51,6 +51,13 @@ main {
    padding-top: 4rem;
 }
 
+h1 {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
 ul.cheese-slice {
     margin-left: 1rem;
     list-style: none;
@@ -232,7 +239,7 @@ header {
     padding-bottom: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-image: linear-gradient(to bottom right, var(--orange), #d47f00);
+    background-image: linear-gradient(to bottom right, var(--orange), #a723016e);
     border-bottom: solid 3px;
 }
 
@@ -273,13 +280,6 @@ header {
     height: 525px;
     border: solid;
     border-width: 2px;
-}
-
-h1 {
-    font-family: 'Clash Display', sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    text-align: center;
 }
 
 .front-page h1 img {
@@ -468,29 +468,31 @@ h1 {
  *******************************************************************************************/
 
  .history {
+   padding-left: 1rem;
+   padding-right: 1rem;
+ }
+
+ .history-1 {
     background-color: var(--brown);
     color: var(--offwhite);
     padding-top: 1rem;
     padding-bottom: 3rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
  }
 
- .history h1 {
+ .history-1 h1 {
      padding-top: 2rem;
      padding-bottom: 3rem;
  }
 
- .history video {
-     width: 450px;
+ .history-1 video {
+     height: 180px;
      border-radius: 8px;
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
      border:solid;
      border-width: 2px;
  }
 
-
-.history .img-container-2 img {
+.history-1 .img-container-2 img {
     height: 400px;
     border-color: var(--teal);
 }
@@ -500,8 +502,6 @@ h1 {
     color: var(--teal);
     padding-top: 1rem;
     padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
  }
 
 .history-2 .img-container-1 img {
@@ -513,8 +513,6 @@ h1 {
     color: var(--teal);
     padding-top: 3rem;
     padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .history-3 .img-container-1 img {
@@ -526,8 +524,6 @@ h1 {
     color: var(--offwhite);
     padding-top: 3rem;
     padding-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .history-4 .img-container-1 img {
@@ -545,8 +541,8 @@ h1 {
 .tips {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 1rem; /* changed to 4rem by media query on larger screens */
+    padding-right: 1rem; /* changed to 4rem by media query on larger screens */
 }
 
 .tips-1 {
@@ -557,6 +553,8 @@ h1 {
 .tips-2 {
     background-color: var(--brown);
     color: var(--offwhite);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 
 .tips-3 {
@@ -603,6 +601,23 @@ h1 {
     width: 40rem;
     margin: 1rem;
 }
+
+/*******************************************************************************************
+  * Gear
+  *******************************************************************************************/
+
+.gear {
+  background-color: var(--orange);
+    height: 50rem;
+    color: var(--teal);
+    padding-top: 2rem; /* changed to 20rem by media query for bigger screens */ 
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-image: linear-gradient(to bottom right, var(--orange), #a723016e);
+    border-bottom: solid 3px;
+}
+
 
 /*******************************************************************************************
   * Footer
@@ -663,6 +678,16 @@ h1 {
   }
   header .menu-icon {
     display: none;
+  }
+  .tips {
+      padding-left: 4rem;
+      padding-right: 4rem;
+  }
+  .history-1 video {
+      height: 260px;
+  }
+  .gear {
+      padding-top: 20rem;
   }
 }
 
