@@ -634,41 +634,6 @@ header {
     background-color: white;
 }
 
-.csm ul.cheese-slice {
-    margin-left: 1rem;
-    list-style: none;
-    margin-bottom: 0;
-}
-
-.csm ul.cheese-slice>li {
-  margin-bottom: 1rem; 
-  padding-bottom: 0;
-  padding-left: 1.5rem;
-  margin-left: 15rem;
-  font-weight: 400;
-  position: relative;
-}
-
-.csm ul.cheese-slice>li::before {
-  content: '';
-  color: var(--offwhite);
-  font-size: 1.5rem;
-  font-weight: 700;
-  position: absolute;
-  --size: 180px;
-  left: calc(-1 * var(--size) - 10px);
-  line-height: var(--size);
-  width: var(--size);
-  height: var(--size);
-  top: 0;
-  transform: rotate(-10deg);
-  background: var(--orange);
-  border-radius: 20%;
-  text-align: center;
-  box-shadow: 1px 1px 0 var(--teal);
-  background-image: linear-gradient(to bottom right, var(--orange), #d47f00);
-}
-
 /*******************************************************************************************
   * Footer
   *******************************************************************************************/
