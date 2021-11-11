@@ -58,6 +58,15 @@ h1 {
     text-align: center;
 }
 
+sup {
+    font-size: 50%;
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: 700;
+}
+
 ul.cheese-slice {
     margin-left: 1rem;
     list-style: none;
@@ -311,9 +320,6 @@ header {
     font-style: italic;
 }
 
-.bold {
-    font-weight: 700;
-}
 
 /*******************************************************************************************
  * About section
@@ -461,6 +467,10 @@ header {
 .flex-text-rules {
     width: 40rem;
     margin: 1rem;
+}
+
+ul.cheese-slice>li.alternate-li{
+    font-weight: 700;
 }
 
 /*******************************************************************************************
@@ -623,15 +633,92 @@ header {
   *******************************************************************************************/
 
 .csm {
-  background-color: var(--orange);
-    height: 50rem;
-    color: var(--teal);
-    padding-top: 2rem; /* changed to 20rem by media query for bigger screens */ 
-    padding-bottom: 1.5rem;
-    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem; 
     padding-right: 1rem;
-    border-bottom: solid 3px;
-    background-color: white;
+}
+
+ .csm-1 h1 {
+     padding-top: 2rem;
+     padding-bottom: 3rem;
+ }
+
+.csm-1 {
+    background-color: var(--brown);
+    color: var(--offwhite);
+    padding-top: 1rem;
+    padding-bottom: 3rem; 
+}
+
+.csm-2 {
+    background-color: var(--offwhite);
+    color: var(--teal);
+    padding-top: 3rem;
+    padding-bottom: 3rem; 
+}
+
+.csm-3 {
+    background-color: var(--orange);
+    color: var(--teal);
+    padding-top: 3rem;
+    padding-bottom: 3rem; 
+}
+
+.csm-4 {
+    background-color: var(--brown);
+    color: var(--offwhite);
+    padding-top: 1rem;
+    padding-bottom: 2rem; 
+}
+
+.csm-1 .img-container-1 img {
+    height: 380px;
+}
+
+.csm-1 .img-container-2 img {
+    height: 360px;
+}
+
+.csm-2 .img-container-1 img {
+    height: 350px;
+}
+
+.csm-2 .img-container-2 img {
+    height: 350px;
+}
+
+.csm-3 .img-container-1 img {
+    height: 380px;
+}
+
+.csm-3 .img-container-2 img {
+    height: 350px;
+}
+
+.flex-container-csm {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    justify-content: space-around;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container-csm img {
+    height: 320px;
+}
+
+.text-box-csm {
+  text-align: center;
+  width: 100%;
 }
 
 /*******************************************************************************************
